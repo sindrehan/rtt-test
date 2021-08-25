@@ -1,0 +1,7 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+# REQUIRED - sets the linker script
+rustflags = [
+    "-C", "link-arg=-Tlink.x",
+]
